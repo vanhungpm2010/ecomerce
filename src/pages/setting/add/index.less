@@ -1,0 +1,111 @@
+@import '~antd/es/style/themes/default.less';
+
+.title {
+  position: relative;
+  left: 42px;
+  color: @text-color;
+  font-size: 12px;
+  text-align: left;
+}
+
+.head-title {
+  margin-bottom: 20px;
+  color: @heading-color;
+  font-weight: 500px;
+  font-size: 16px;
+}
+
+.long-label {
+  :global {
+    .ant-form-item-label {
+      line-height: 20px;
+    }
+  }
+  label {
+    float: left;
+    width: 96%;
+    white-space: normal;
+  }
+}
+
+:global {
+  .ant-upload-picture-card-wrapper {
+    display: inline;
+  }
+  .ant-form-item {
+    margin-bottom: 20px;
+  }
+
+  .setting-boder,
+  .ant-tabs-line {
+    margin-top: 5px;
+    padding: 13px;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+  }
+
+  .btn-green {
+    color: rgb(255, 255, 255);
+    background-color: rgb(40, 167, 69);
+    border-color: rgb(40, 167, 69);
+  }
+
+  .btn-move-right {
+    margin-top: 5px;
+    text-align: right;
+  }
+
+  .btn-move-center {
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .ant-table-content {
+    margin-top: 5px;
+  }
+
+  .btn-move-right button {
+    margin-left: 5px;
+  }
+
+  .ant-upload-list::before {
+    display: none !important;
+  }
+
+  .ant-upload-list::after {
+    display: none !important;
+  }
+
+  .ant-table-thead tr th .ant-row::before {
+    display: none;
+  }
+
+  .ant-table-thead tr th .ant-row::after {
+    display: none;
+  }
+
+  .ant-table-header-column {
+    width: 100%;
+    text-align: left;
+  }
+
+  .ant-table-tbody tr .ant-row::after {
+    display: none;
+  }
+
+  .ant-table-tbody tr .ant-row::before {
+    display: none;
+  }
+
+  form .ant-col {
+    padding: 0 2px;
+  }
+  .input-bottom {
+    margin-top: 7px;
+  }
+}
+.p-ant {
+  padding-left: 20px;
+  color: #000;
+  text-align: right;
+}

@@ -1,0 +1,13 @@
+version: "3"
+services:
+  web:
+    build: ./
+    # replace username/repo:tag with your name and image details
+    # image: fatbuta/firis-fontend:0.0.1
+    restart: always
+    ports:
+      - "80:80"
+    networks:
+      - webnet
+networks:
+  webnet:

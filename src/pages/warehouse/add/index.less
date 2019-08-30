@@ -1,0 +1,64 @@
+@import '~antd/es/style/themes/default.less';
+
+.title {
+  position: relative;
+  left: 42px;
+  color: @text-color;
+  font-size: 12px;
+  text-align: left;
+}
+
+.head-title {
+  margin-bottom: 20px;
+  color: @heading-color;
+  font-weight: 500px;
+  font-size: 16px;
+}
+:global {
+  .ql-container {
+    min-height: 10em;
+  }
+  .ant-modal-header {
+    border-bottom: none;
+  }
+  .ant-modal-footer {
+    border-top: none;
+  }
+  .ul-modal-ant {
+    padding: 0;
+    color: #000;
+    font-size: 14px;
+
+    li {
+      position: relative;
+      height: 28px;
+      padding: 0 18px;
+      line-height: 28px;
+      border-left: 2px solid transparent;
+      i.anticon.anticon-right {
+        float: right;
+        font-weight: 400;
+        line-height: 28px;
+      }
+    }
+    li:hover {
+      background-color: #f4f4f4;
+    }
+  }
+  .col-modal-ant {
+    padding: 22px 0;
+    border: 1px solid #dcdee3;
+  }
+}
+.long-label {
+  :global {
+    .ant-form-item-label {
+      line-height: 20px;
+    }
+  }
+  label {
+    float: left;
+    width: 96%;
+    white-space: normal;
+  }
+}

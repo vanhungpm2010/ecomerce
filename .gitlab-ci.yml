@@ -1,0 +1,25 @@
+stages:
+  - build
+  - deploy
+  
+build:
+  stage: build
+  services:
+  - docker:dind
+  image: docker:latest
+  tags:
+   - staging
+  script:
+    - docker-compose build
+
+deploy:
+  stage: deploy
+  services:
+  - docker:dind
+  image: docker:latest
+  tags:
+    - staging
+  script:
+    - docker-compose -f docker-compose.yml stop
+    - docker-compose -f docker-compose.yml up -d
+    
